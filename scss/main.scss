@@ -1,3 +1,15 @@
-body {
-    background-color: white;
+@import "./2-Utils/variables";
+@import "./1-Base/fonts";
+@import "./1-Base/base";
+@import "./4-Composants/buttons";
+
+//-----------------------------------------------------------------------------//
+//Mise en forme du header//
+.header{
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
+    height:auto;
+    
+    &-backbtn {
+        display:none;
+    }
 }

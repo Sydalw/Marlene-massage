@@ -1,5 +1,105 @@
+@font-face {
+  font-family: "Glacial_indifference";
+  src: url("../fonts/glacial-indifference/GlacialIndifference-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Glacial_indifference";
+  src: url("../fonts/glacial-indifference/GlacialIndifference-Bold.otf");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Glacial_indifference";
+  src: url("../fonts/glacial-indifference/GlacialIndifference-Italic.otf");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Lemon_tuesday";
+  src: url("../fonts/lemon_tuesday/Lemon Tuesday.otf");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
+  font-family: "Glacial_indifference", tahoma;
+  width: 100%;
+  max-width: max-content;
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto 20px auto;
+}
+@media (max-width: 1023px) {
+  body {
+    width: auto;
+    background-color: white;
+  }
+}
+body h1, body h2, body h3, body h4 {
+  font-family: "Lemon_tuesday", tahoma;
+}
+
+main {
   background-color: white;
+}
+
+button:hover {
+  cursor: pointer;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+a:visited {
+  color: black;
+}
+
+.corps {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  display: block;
+  color: white;
+  width: 200px;
+  height: 44px;
+  border-radius: 22px;
+  border: none;
+  background-image: linear-gradient(325deg, #9356DC, #FF79DA);
+  font-family: "Roboto", tahoma;
+  margin: 60px auto 60px auto;
+  box-shadow: 0px 4px 10px 5px rgba(0, 0, 0, 0.08);
+  position: relative;
+  z-index: 1;
+}
+.btn:hover::after {
+  opacity: 1;
+}
+.btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(325deg, #541f94, #f900b4);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 1000ms;
+  border-radius: 22px;
+}
+
+.header {
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+  height: auto;
+}
+.header-backbtn {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

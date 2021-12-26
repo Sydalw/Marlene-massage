@@ -1,0 +1,38 @@
+.btn{
+    display:block;
+    color:white;
+    width:200px;
+    height:44px;
+    border-radius: 22px;
+    border: none;
+    background-image: $mix_p_s;
+    font-family:'Roboto', tahoma;
+    margin:60px auto 60px auto;
+    box-shadow: 0px 4px 10px 5px rgba(0,0,0,0.08);
+    
+    //transform: scale(1);
+    //transition: transform 400ms;
+    
+    position:relative;
+    z-index: 1;
+    
+    &:hover{
+        &::after{
+            opacity:1;
+        }
+    }
+    
+    &::after{
+        content:"";
+        position:absolute;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        background-image: $mix_p_s_dark;
+        opacity: 0;
+        z-index:-1;
+        transition: opacity 1000ms;
+        border-radius: 22px;
+    }
+}
