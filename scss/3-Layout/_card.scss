@@ -1,0 +1,153 @@
+.cardLine{
+    display:flex;
+
+    &_container {
+    width: 285px;
+    height: 302px;
+    min-height: 302px;
+
+        &_1 {
+            background-color: $couleur_card1;
+        }
+        &_2 {
+
+        }
+        &_3 {
+            background-color: $couleur_card3;
+        }
+        &_4 {
+
+        }
+        &_5 {
+            
+        }
+        &_6 {
+            background-color: $couleur_card2;
+        }
+        &_7 {
+
+        }
+        &_8 {
+            background-color: $couleur_card4;
+        }
+
+        &_textBox {
+
+            h3 {
+                box-sizing: border-box;
+                flex-shrink: 0;
+                font-family: Lemon_tuesday,Roboto,sans-serif;
+                font-size: 1.875rem;
+                font-weight: 700;
+                line-height: 1.2;
+                margin: 25px auto 0;
+                overflow-wrap: break-word;
+                padding: 0;
+                position: relative;
+                text-align: center;
+                width: 225px;
+                word-wrap: break-word;
+            }
+
+            p{
+                box-sizing: border-box;
+
+                flex-shrink: 0;
+                font-family: Glacial_indifference,"Open Sans",sans-serif;
+                font-style: italic;
+                line-height: 25.6px;
+                margin: 20px auto 30px;
+                overflow-wrap: break-word;
+                padding: 0;
+                position: relative;
+                text-align: center;
+                width: 225px;
+                word-wrap: break-word;
+            }
+
+            .trait {
+                border: solid;
+                border-width: 3px 0 0;
+                box-sizing: border-box;
+                flex-shrink: 0;
+                height: 3px;
+                line-height: 25.6px;
+                margin: 30px auto 0;
+                position: relative;
+                stroke: #000;
+                transform: rotate(360deg);
+                transform-origin: left center 0;
+                width: 54px;
+            }
+            
+            &_1 {
+                h3, p {
+                    color: #111;
+                }
+
+                .trait {
+                    border-color: #111;
+                }
+            }
+            &_2 {
+
+            }
+            &_3 {               
+                h3, p {
+                    color: #fff;
+                }
+                
+                .trait {
+                    border-color: #fff;
+                }
+
+            }
+            &_4 {
+
+            }
+            &_5 {
+                
+            }
+            &_6 {
+                h3, p {
+                    color: #111;
+                }
+                .trait {
+                    border-color: #111;
+                }
+            }
+            &_7 {
+
+            }
+            &_8 {
+                h3, p {
+                    color: #fff;
+                }
+                .trait {
+                    border-color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.layout {
+    margin-top:-80px;
+    z-index:9000;
+}
+
+@media (max-width: 1199px) {
+
+}
+
+@media (max-width: 991px) {
+
+}
+
+@media (max-width: 767px) {
+
+}
+
+@media (max-width: 575px) {
+
+}

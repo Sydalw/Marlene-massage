@@ -1,10 +1,6 @@
 body{
     font-family: 'Glacial_indifference',tahoma;
-    width:100%;
-    max-width:max-content;
-    display:flex;
-    flex-direction: column;
-    margin:20px auto 20px auto;
+    margin-top:20px;
     //background-color: lightgray;
 
     
@@ -16,12 +12,55 @@ body{
     h1, h2, h3, h4 {
         font-family: 'Lemon_tuesday', tahoma;
     }
+
+    h1, h2 {
+        box-sizing: border-box;
+        color: #fff;
+        flex-shrink: 0;
+        line-height: 1.1;
+        margin: 0;
+        overflow-wrap: break-word;
+        padding: 0;
+        position: relative;
+        text-align: left;
+        word-wrap: break-word;
+    }
+
+    h1 {
+        font-size: 6.25rem;
+        font-weight: 300;
+        line-height: 1.1;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 1.2;
+        margin: 20px 0 0;
+    }
+
+}
     
+div {
+    border:solid;
+    border-width: 1px;
+}
+
+img {
+    width:640px;
+}
+
+.logo {
+    width:64px;
 }
 
 main{
     //background-image: $couleur_fond;
     background-color: white;
+}
+
+section {
+    display:block;
 }
 
 button:hover{
@@ -38,6 +77,27 @@ a{
         color:black;
     }
     
+}
+
+.hidden {
+    display:none;
+}
+
+li {
+    list-style: none;
+}
+
+.colonneCentrale{
+    max-width:1140px;
+    margin: 0 auto;
+}
+
+.dcContainer {
+    display:flex;
+}
+
+.doubleColonne {
+    width: 50%;
 }
 
 //-----------------------------------------------------------------------------//

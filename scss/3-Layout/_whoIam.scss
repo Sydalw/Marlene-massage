@@ -1,0 +1,64 @@
+//-----------------------------------------------------------------------------//
+//Mise en forme du howto//
+
+.carreGris {
+    background-color: #434140;
+    background-image: none;
+    box-sizing: border-box;
+    color: #fff;
+    height: 541px;
+    line-height: 25.6px;
+    margin: -505px 0 0 auto;
+    position: relative;
+    text-align: left;
+    width: 462px;
+}
+
+@media (max-width: 991px) {
+
+}
+
+@media (max-width: 767px) {
+
+}
+
+@media (max-width: 575px) {
+
+}
+
+@media (max-width: 1199px) {
+
+}
+
+.bordureGrise{
+    background-image: none;
+    border: 5px solid #434140;
+    box-sizing: border-box;
+    color: #111;
+    height: 593px;
+    line-height: 25.6px;
+    margin: 0 auto 0 0;
+    position: relative;
+    stroke: #434140;
+    text-align: left;
+    width: 394px;
+}
+
+.imgWhoIam{
+    background-position: 50% 50%;
+    background-repeat: no-repeat no-repeat;
+    background-size: cover;
+    border-style: none;
+    box-sizing: border-box;
+    color: #111;
+    display: block;
+    height: 519px;
+    line-height: 25.6px;
+    margin: -592px auto 65px 37px;
+    object-fit: cover;
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+    vertical-align: middle;
+    width: 435px;
+}

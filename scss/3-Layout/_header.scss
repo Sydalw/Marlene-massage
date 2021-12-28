@@ -1,32 +1,33 @@
 //-----------------------------------------------------------------------------//
 //Mise en forme du header//
-.header{
-    font-family: 'Shrikhand', tahoma;
+header {
+    display:flex;
+    justify-content: space-around;
+    margin:20px 0;
+
+    ul {
+        display : flex;
+        margin-top:20px;
+        padding-top:20px;
+        
+        li {
+            margin: 0 20px 0 20px;
+
+            a:hover {
+                color:red;
+            }
+        }
+    }
+}
+.header {
+    width:1140px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    position:relative;
+    justify-content: space-between;
     height:70px;
-    padding-bottom: 20px;
-    
-    &-btn {
-        position: absolute;
-        left:40px;
-        top:5px;
-        font-size: 28px;
-        
-        @media (max-width: 350px) {
-            left:10px;
-        }
-        
-        &:hover{
-            color:$couleur_tertiaire;
-        }
-    }
-    
-    &-titre h1{
-        color: $couleur_footer;
-        text-align: center;
-        font-size: 38px;
-    }
+    //position:fixed;
+}
+
+nav{
+    //display:flex;
 }

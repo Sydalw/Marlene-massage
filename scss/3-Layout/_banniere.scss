@@ -1,0 +1,27 @@
+//-----------------------------------------------------------------------------//
+//Mise en forme des résultats de recherche//
+.banniere{
+    background-image: url("../images/photos/20211023-R-IMG_1353c.jpg");
+    width: 100%;
+    min-height: 700px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat no-repeat;
+    background-position:center;
+    background-size:cover;
+    box-sizing: border-box;
+    object-fit: cover;
+    overflow: visible;
+    position: relative;
+    vertical-align: middle;
+    z-index:-11;
+
+    &_height{
+        height:700px;
+    }
+}
+
+.verticalCentering {
+    width:700px;
+    margin: auto 0;
+    margin-top:200px;
+}
