@@ -1,9 +1,7 @@
 body{
     font-family: 'Glacial_indifference',tahoma;
-    margin-top:20px;
-    //background-color: lightgray;
+    margin:0;
 
-    
     @media (max-width: 1023px) {
         width:auto;
         background-color: white;
@@ -40,11 +38,6 @@ body{
     }
 
 }
-    
-div {
-    //border:solid;
-    border-width: 1px;
-}
 
 img {
     width:640px;
@@ -55,13 +48,13 @@ img {
 }
 
 main{
-    //background-image: $couleur_fond;
     background-color: white;
 }
 
 section {
     display:block;
     margin-top:70px;
+    margin-bottom:0;
 }
 
 button:hover{
@@ -81,7 +74,7 @@ a{
 }
 
 .hidden {
-    display:none;
+    display:none !important;
 }
 
 li {
@@ -109,4 +102,8 @@ li {
 .corps{
     display:flex;
     flex-direction: column;
+}
+
+.flex {
+    display:flex;
 }

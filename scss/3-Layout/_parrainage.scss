@@ -11,11 +11,17 @@
     object-fit: cover;
     overflow: visible;
     position: relative;
+    height:700px;
 
     &_majorContainer{
         padding: 50px 0 50px 0;
     }
 
+    .doubleColonneG{
+        max-width:450px;
+        margin-right:20px;
+    }
+    
     h2 {
         box-sizing: border-box;
         color: inherit;
@@ -121,7 +127,7 @@
         display: block;
         height: 503px;
         line-height: 25.6px;
-        margin: -616px auto 0 51px;
+        margin: -616px auto 0 91px;
         object-fit: cover;
         object-position: 80.55% 50%;
         overflow: hidden;
