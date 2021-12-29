@@ -7,14 +7,10 @@
 @import "./3-Layout/card";
 @import "./3-Layout/banniere";
 @import "./3-Layout/whoIam";
+@import "./3-Layout/presentation";
+@import "./3-Layout/testimonials";
+@import "./3-Layout/parrainage";
+@import "./3-Layout/coordonnees";
 
 //-----------------------------------------------------------------------------//
 //Mise en forme du header//
-.header{
-    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
-    height:auto;
-    
-    &-backbtn {
-        display:none;
-    }
-}

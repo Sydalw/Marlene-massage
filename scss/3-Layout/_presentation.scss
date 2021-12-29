@@ -1,0 +1,78 @@
+.accroche {
+
+    display:flex;
+
+    
+    &_img {
+        object-fit: cover;
+        width:100%;
+        max-height:900px;
+        background-position: 50% 50%;
+    }
+
+
+    &_img:before {
+        bottom: 0;
+        content: "";
+        display: block;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transition-duration: 0s;
+    }
+
+    &_textContainer {
+        box-sizing: border-box;
+        color: #111;
+        flex: 1 1 0;
+        line-height: 25.6px;
+        max-width: 100%;
+        position: relative;
+        text-align: left;
+        background-color: $couleur_card2;
+        padding-left: 50px;
+
+        h2 {
+            box-sizing: border-box;
+            color: #111;
+            font-size: 2.25rem;
+            font-weight: 500;
+            line-height: 1.2;
+            margin: 50px 0 0;
+            overflow-wrap: break-word;
+            padding: 0;
+            position: relative;
+            text-align: left;
+            word-wrap: break-word;
+        }
+
+        &_trait {
+            border: solid #000;
+            border-width: 3px 0 0;
+            box-sizing: border-box;
+            flex-shrink: 0;
+            height: 3px;
+            margin: 30px auto 0 0;
+            position: relative;
+            stroke: #000;
+            text-align: left;
+            transform-origin: left center 0;
+            width: 54px;
+        }
+        
+        p {
+            box-sizing: border-box;
+            color: #111;
+            line-height: 25.6px;
+            margin: 30px 0 0;
+            overflow-wrap: break-word;
+            padding: 0;
+            position: relative;
+            text-align: left;
+            word-wrap: break-word;
+        }
+    }
+}
+
+

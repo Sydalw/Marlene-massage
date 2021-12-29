@@ -1,14 +1,29 @@
 .btn{
-    display:block;
-    color:white;
-    width:200px;
-    height:44px;
-    border-radius: 22px;
-    border: none;
-    background-image: $mix_p_s;
-    font-family:'Roboto', tahoma;
-    margin:60px auto 60px auto;
-    box-shadow: 0px 4px 10px 5px rgba(0,0,0,0.08);
+    align-self: flex-start;
+    background-color: #434140;
+    background-image: none;
+    border: 0 none transparent;
+    border-radius: 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: table;
+    flex-shrink: 0;
+    font-family: Glacial_indifference,"Open Sans",sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 25.6px;
+    margin: 30px auto 65px 0;
+    outline: 0;
+    padding: 10px 30px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
     
     //transform: scale(1);
     //transition: transform 400ms;
@@ -33,6 +48,5 @@
         opacity: 0;
         z-index:-1;
         transition: opacity 1000ms;
-        border-radius: 22px;
     }
 }

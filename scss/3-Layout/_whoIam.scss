@@ -1,64 +1,112 @@
 //-----------------------------------------------------------------------------//
 //Mise en forme du howto//
 
-.carreGris {
-    background-color: #434140;
-    background-image: none;
-    box-sizing: border-box;
-    color: #fff;
-    height: 541px;
-    line-height: 25.6px;
-    margin: -505px 0 0 auto;
-    position: relative;
-    text-align: left;
-    width: 462px;
-}
+.whoIam {
+    &_carreGris {
+        background-color: $couleur_card4;
+        background-image: none;
+        box-sizing: border-box;
+        height: 541px;
+        margin: -505px 0 0 auto;
+        position: relative;
+        width: 462px;
+    }
 
-@media (max-width: 991px) {
+    @media (max-width: 991px) {
 
-}
+    }
 
-@media (max-width: 767px) {
+    @media (max-width: 767px) {
 
-}
+    }
 
-@media (max-width: 575px) {
+    @media (max-width: 575px) {
 
-}
+    }
 
-@media (max-width: 1199px) {
+    @media (max-width: 1199px) {
 
-}
+    }
 
-.bordureGrise{
-    background-image: none;
-    border: 5px solid #434140;
-    box-sizing: border-box;
-    color: #111;
-    height: 593px;
-    line-height: 25.6px;
-    margin: 0 auto 0 0;
-    position: relative;
-    stroke: #434140;
-    text-align: left;
-    width: 394px;
-}
+    &_bordureGrise{
+        background-image: none;
+        border: 5px solid $couleur_card3;
+        box-sizing: border-box;
+        height: 593px;
+        margin: 0 auto 0 0;
+        position: relative;
+        width: 394px;
+    }
 
-.imgWhoIam{
-    background-position: 50% 50%;
-    background-repeat: no-repeat no-repeat;
-    background-size: cover;
-    border-style: none;
-    box-sizing: border-box;
-    color: #111;
-    display: block;
-    height: 519px;
-    line-height: 25.6px;
-    margin: -592px auto 65px 37px;
-    object-fit: cover;
-    overflow: hidden;
-    position: relative;
-    text-align: left;
-    vertical-align: middle;
-    width: 435px;
+    &_img{
+        background-position: 50% 50%;
+        background-repeat: no-repeat no-repeat;
+        background-size: cover;
+        border-style: none;
+        box-sizing: border-box;
+        display: block;
+        height: 519px;
+        margin: -592px auto 65px 37px;
+        object-fit: cover;
+        overflow: hidden;
+        position: relative;
+        width: 435px;
+    }
+
+
+    &_textContainer {
+        box-sizing: border-box;
+        display: flex;
+        flex: 1 1 0;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 25.6px;
+        max-width: 100%;
+        padding-left: 43px;
+        padding-right: 51px;
+        position: relative;
+        text-align: left;
+
+        h2 {
+            box-sizing: border-box;
+            color: #111;
+            flex-shrink: 0;
+            font-size: 3.75rem;
+            font-weight: 500;
+            line-height: 1.2;
+            margin: 0;
+            overflow-wrap: break-word;
+            padding: 0;
+            position: relative;
+            text-align: left;
+            word-wrap: break-word;
+        }
+
+        &_trait {
+            border: solid #000;
+            border-width: 3px 0 0;
+            box-sizing: border-box;
+            flex-shrink: 0;
+            height: 3px;
+            margin: 30px auto 0 0;
+            position: relative;
+            stroke: #000;
+            text-align: left;
+            transform-origin: left center 0;
+            width: 54px;
+        }
+
+        p {
+            box-sizing: border-box;
+            color: #111;
+            flex-shrink: 0;
+            line-height: 25.6px;
+            margin: 34px 0 0;
+            overflow-wrap: break-word;
+            padding: 0;
+            position: relative;
+            text-align: left;
+            word-wrap: break-word;
+        }
+    }
 }

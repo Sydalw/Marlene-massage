@@ -1,0 +1,47 @@
+.testimonial {
+    h2 {
+        box-sizing: border-box;
+        color: #111;
+        font-size: 3.75rem;
+        font-weight: 500;
+        line-height: 1.2;
+        margin: 26px 0;
+        overflow-wrap: break-word;
+        padding: 0;
+        position: relative;
+        text-align: center;
+        word-wrap: break-word;
+    }
+
+    &_row {
+        display:flex;
+        flex-direction: row;
+    }
+
+    &_card{
+        padding:10px;
+    }
+
+    svg {
+        width:100px;
+        height:100px;
+        box-sizing: border-box;
+        color: $couleur_card4;
+        fill: $couleur_card4;
+        height: 100%;
+        line-height: 0;
+        text-align: left;
+    }
+    
+    p {
+        box-sizing: border-box;
+        color: #111;
+        line-height: 25.6px;
+        margin: -50px 30px 0;
+        overflow-wrap: break-word;
+        padding: 0;
+        position: relative;
+        text-align: left;
+        word-wrap: break-word;
+    }
+}

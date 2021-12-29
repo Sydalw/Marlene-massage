@@ -1,0 +1,64 @@
+//-----------------------------------------------------------------------------//
+//Mise en forme du formulaire//
+.search-form{
+    display:flex;
+    flex-direction: column;
+    //margin: 40px auto 0px auto;
+    width:100%;
+    align-items: center;
+    border-radius:20px;
+    justify-content: space-between;
+
+    &__conteneur{
+        display:flex;
+        justify-content: center;
+        margin:0;
+        width:100%;
+        border-top: 1px solid $couleur_border;
+        //border-bottom: 1px solid $couleur_border;
+        background-color: darken(white,7%);
+        
+        input{
+            border:1px solid transparent;
+            height:2.5em;
+            font-size: 1em;
+            justify-content: center;
+            width:100%;
+            background-color: transparent;
+            
+            &:hover{
+                border:1px solid $couleur_tertiaire;
+            }
+            
+            &:placeholder-shown{
+                text-align: center;
+            }
+
+            &:focus{
+                background-color: lighten($couleur_secondaire,20%);
+            }
+        }
+            
+        &__icone{
+            padding: 10px 4px 0 0;
+
+        }
+
+        &__cadre-input{
+            border:1px solid transparent;
+        }
+}
+    
+    h2{
+        margin-top: 40px;
+        margin-bottom: 0;
+        font-weight: bolder;
+        text-align: center;
+    }
+    
+    h2 + p{
+        margin-top: 25px;
+        font-size: 18px;
+        text-align: center;
+    } 
+}

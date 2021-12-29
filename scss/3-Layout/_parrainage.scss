@@ -1,0 +1,158 @@
+.parrainage {
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, .45), rgba(255, 255, 255, .45)),url(../images/sx.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    color: #111;
+    display: block;
+    font-family: Glacial_indifference,"Open Sans",sans-serif;
+    line-height: 25.6px;
+    object-fit: cover;
+    overflow: visible;
+    position: relative;
+
+    &_majorContainer{
+        padding: 50px 0 50px 0;
+    }
+
+    h2 {
+        box-sizing: border-box;
+        color: inherit;
+        flex-shrink: 0;
+        font-family: Lemon_tuesday,Roboto,sans-serif;
+        font-size: 4.5rem;
+        font-weight: 500;
+        line-height: 1.2;
+        margin: 0;
+        overflow-wrap: break-word;
+        padding: 0;
+        position: relative;
+        text-align: left;
+        word-wrap: break-word;
+    }
+
+    p {
+        box-sizing: border-box;
+        color: #111;
+        flex-shrink: 0;
+        font-family: Glacial_indifference,"Open Sans",sans-serif;
+        line-height: 25.6px;
+        margin: 30px 0 0;
+        overflow-wrap: break-word;
+        padding: 0;
+        position: relative;
+        text-align: left;
+        word-wrap: break-word;
+    }
+
+    a {
+        align-self: flex-start;
+        background-color: transparent;
+        border: 2px #000;
+        border-radius: 0;
+        border-style: none none solid;
+        box-sizing: border-box;
+        color: #111;
+        cursor: pointer;
+        display: table;
+        flex-shrink: 0;
+        font-family: inherit;
+        font-size: inherit;
+        font-weight: inherit;
+        letter-spacing: inherit;
+        line-height: inherit;
+        margin: 20px auto 0 0;
+        outline: 0;
+        padding: 0;
+        position: relative;
+        stroke: #000;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        user-select: none;
+        vertical-align: middle;
+        white-space: nowrap;
+    }
+
+    a:hover {
+        border-color: #f1c50e;
+        color: gray;
+    }
+
+    a:focus {
+        border-color: #f1c50e;
+        color: gray;
+        outline: 5px auto -webkit-focus-ring-color;
+        outline-offset: -2px;
+    }
+
+    a:active {
+        background-image: none;
+        border-color: #f1c50e;
+        color: gray;
+    }
+
+    a:active:focus {
+        outline: 5px auto -webkit-focus-ring-color;
+        outline-offset: -2px;
+    }
+
+    &_trait {
+        border: solid #000;
+        border-width: 3px 0 0;
+        box-sizing: border-box;
+        flex-shrink: 0;
+        height: 3px;
+        margin: 30px 365px 0 0;
+        position: relative;
+        stroke: #000;
+        transform-origin: left center 0;
+        width: 54px;
+    }
+
+    img {
+        background-position: 80.55% 50%;
+        background-repeat: no-repeat no-repeat;
+        background-size: cover;
+        border-style: none;
+        box-sizing: border-box;
+        color: #111;
+        display: block;
+        height: 503px;
+        line-height: 25.6px;
+        margin: -616px auto 0 51px;
+        object-fit: cover;
+        object-position: 80.55% 50%;
+        overflow: hidden;
+        position: relative;
+        text-align: left;
+        vertical-align: middle;
+        width: 525px;
+    }
+
+    .bordureGrise {
+        background-image: none;
+        border: 5px solid $couleur_card3;
+        box-sizing: border-box;
+        height: 479px;
+        line-height: 25.6px;
+        margin: 75px auto 0 0;
+        position: relative;
+        stroke: $couleur_card3;
+        text-align: left;
+        width: 479px;
+    }
+
+    .carreGris {
+        background-color: $couleur_card4;
+        background-image: none;
+        box-sizing: border-box;
+        height: 453px;
+        line-height: 25.6px;
+        margin: -391px -60px 0 auto;
+        position: relative;
+        text-align: left;
+        width: 462px;
+    }
+}

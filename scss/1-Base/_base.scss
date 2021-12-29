@@ -42,7 +42,7 @@ body{
 }
     
 div {
-    border:solid;
+    //border:solid;
     border-width: 1px;
 }
 
@@ -61,6 +61,7 @@ main{
 
 section {
     display:block;
+    margin-top:70px;
 }
 
 button:hover{
@@ -94,10 +95,12 @@ li {
 
 .dcContainer {
     display:flex;
+   // margin-top:70px;
 }
 
 .doubleColonne {
     width: 50%;
+    display:flex;
 }
 
 //-----------------------------------------------------------------------------//
