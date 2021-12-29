@@ -17,11 +17,41 @@
         padding: 50px 0 50px 0;
     }
 
+    .dcContainer {
+        display:flex;
+        flex:1 1 0;
+    }
+
     .doubleColonneG{
-        max-width:450px;
-        margin-right:20px;
+        padding-left: 10px;
+        padding-right: 40px;
+        display: flex;
+        flex: 0 0 45%;
+        max-height: 100%;
+        max-width: 45%;
+        min-height: 618px;
+        min-width: 45%;
+        position: relative;
+        text-align: left;
+    }
+
+    .doubleColonneD {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 55%;
+        max-height: 100%;
+        max-width: 55%;
+        min-height: 618px;
+        min-width: 55%;
+        position: relative;
+        text-align: left;
     }
     
+    &_textContainer {
+        margin-top:80px;
+        margin-right: 80px;
+    }
+
     h2 {
         box-sizing: border-box;
         color: inherit;
@@ -127,13 +157,12 @@
         display: block;
         height: 503px;
         line-height: 25.6px;
-        margin: -616px auto 0 91px;
+        margin: -616px auto 0 0;
         object-fit: cover;
         object-position: 80.55% 50%;
         overflow: hidden;
         position: relative;
         text-align: left;
-        vertical-align: middle;
         width: 525px;
     }
 
@@ -143,7 +172,7 @@
         box-sizing: border-box;
         height: 479px;
         line-height: 25.6px;
-        margin: 75px auto 0 0;
+        margin: 75px auto 0 -50px;
         position: relative;
         stroke: $couleur_card3;
         text-align: left;
@@ -156,7 +185,7 @@
         box-sizing: border-box;
         height: 453px;
         line-height: 25.6px;
-        margin: -391px -60px 0 auto;
+        margin: -391px -53px 0 auto;
         position: relative;
         text-align: left;
         width: 462px;

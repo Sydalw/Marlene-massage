@@ -1,11 +1,11 @@
 .btn{
     align-self: flex-start;
-    background-color: #434140;
+    background-color: $couleur_card3;
     background-image: none;
     border: 0 none transparent;
     border-radius: 0;
     box-sizing: border-box;
-    color: #fff;
+    color: #fff !important;
     cursor: pointer;
     display: table;
     flex-shrink: 0;

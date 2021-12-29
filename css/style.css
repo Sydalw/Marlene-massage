@@ -129,7 +129,7 @@ li {
   border: 0 none transparent;
   border-radius: 0;
   box-sizing: border-box;
-  color: #fff;
+  color: #fff !important;
   cursor: pointer;
   display: table;
   flex-shrink: 0;
@@ -161,7 +161,7 @@ li {
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: linear-gradient(325deg, #541f94, #f900b4);
+  background-image: linear-gradient(325deg, #a7aa8c, #c2986e);
   opacity: 0;
   z-index: -1;
   transition: opacity 1000ms;
@@ -212,6 +212,7 @@ header {
   display: flex;
   justify-content: space-around;
   margin: 20px 0;
+  background-color: white;
 }
 header ul {
   display: flex;
@@ -244,11 +245,96 @@ header ul li a:hover {
 .cardLine_container_1 {
   background-color: #E8D8C8;
 }
+.cardLine_container_2 {
+  background-image: url("../images/5919fed0-9290-0161-07e7-b4aac8e308ea.jpg");
+  background-clip: padding-box;
+  background-color: transparent;
+  background-origin: padding-box;
+  background-position: 50% 50%;
+  background-repeat: no-repeat no-repeat;
+  background-size: cover;
+  border: 0 solid transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 0 25%;
+  max-height: 100%;
+  max-width: 25%;
+  min-height: 302px;
+  min-width: 25%;
+  object-fit: cover;
+  overflow: visible;
+  position: relative;
+  vertical-align: middle;
+}
 .cardLine_container_3 {
   background-color: #434140;
 }
+.cardLine_container_4 {
+  background-image: url("../images/5919fed0-9290-0161-07e7-b4aac8e308ea.jpg");
+  background-clip: padding-box;
+  background-color: transparent;
+  background-origin: padding-box;
+  background-position: 50% 50%;
+  background-repeat: no-repeat no-repeat;
+  background-size: cover;
+  border: 0 solid transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 0 25%;
+  max-height: 100%;
+  max-width: 25%;
+  min-height: 302px;
+  min-width: 25%;
+  object-fit: cover;
+  overflow: visible;
+  position: relative;
+  vertical-align: middle;
+}
+.cardLine_container_5 {
+  background-image: url("../images/FLEURS.png");
+  background-clip: padding-box;
+  background-color: transparent;
+  background-origin: padding-box;
+  background-position: 50% 50%;
+  background-repeat: no-repeat no-repeat;
+  background-size: cover;
+  border: 0 solid transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 0 25%;
+  max-height: 100%;
+  max-width: 25%;
+  min-height: 302px;
+  min-width: 25%;
+  object-fit: cover;
+  overflow: visible;
+  position: relative;
+  vertical-align: middle;
+}
 .cardLine_container_6 {
   background-color: #DFE0D5;
+}
+.cardLine_container_7 {
+  background-image: url("../images/MAIN.png");
+  background-clip: padding-box;
+  background-color: transparent;
+  background-origin: padding-box;
+  background-position: 50% 50%;
+  background-repeat: no-repeat no-repeat;
+  background-size: cover;
+  border: 0 solid transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 0 25%;
+  max-height: 100%;
+  max-width: 25%;
+  min-height: 302px;
+  min-width: 25%;
+  object-fit: cover;
+  overflow: visible;
+  position: relative;
+  vertical-align: middle;
+  z-index: 15;
 }
 .cardLine_container_8 {
   background-color: #A0A0A0;
@@ -262,7 +348,7 @@ header ul li a:hover {
   line-height: 1.2;
   margin: 25px auto 0;
   overflow-wrap: break-word;
-  padding: 0;
+  padding-top: 25px;
   position: relative;
   text-align: center;
   width: 225px;
@@ -348,6 +434,7 @@ header ul li a:hover {
 .verticalCentering {
   width: 700px;
   margin: auto 0;
+  padding-top: 50px;
 }
 
 .whoIam_carreGris {
@@ -355,7 +442,7 @@ header ul li a:hover {
   background-image: none;
   box-sizing: border-box;
   height: 541px;
-  margin: -505px 0 0 auto;
+  margin: -505px 0 0 100px;
   position: relative;
   width: 462px;
 }
@@ -563,9 +650,36 @@ header ul li a:hover {
 .parrainage_majorContainer {
   padding: 50px 0 50px 0;
 }
+.parrainage .dcContainer {
+  display: flex;
+  flex: 1 1 0;
+}
 .parrainage .doubleColonneG {
-  max-width: 450px;
-  margin-right: 20px;
+  padding-left: 10px;
+  padding-right: 40px;
+  display: flex;
+  flex: 0 0 45%;
+  max-height: 100%;
+  max-width: 45%;
+  min-height: 618px;
+  min-width: 45%;
+  position: relative;
+  text-align: left;
+}
+.parrainage .doubleColonneD {
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 0 55%;
+  max-height: 100%;
+  max-width: 55%;
+  min-height: 618px;
+  min-width: 55%;
+  position: relative;
+  text-align: left;
+}
+.parrainage_textContainer {
+  margin-top: 80px;
+  margin-right: 80px;
 }
 .parrainage h2 {
   box-sizing: border-box;
@@ -664,13 +778,12 @@ header ul li a:hover {
   display: block;
   height: 503px;
   line-height: 25.6px;
-  margin: -616px auto 0 91px;
+  margin: -616px auto 0 0;
   object-fit: cover;
   object-position: 80.55% 50%;
   overflow: hidden;
   position: relative;
   text-align: left;
-  vertical-align: middle;
   width: 525px;
 }
 .parrainage .bordureGrise {
@@ -679,7 +792,7 @@ header ul li a:hover {
   box-sizing: border-box;
   height: 479px;
   line-height: 25.6px;
-  margin: 75px auto 0 0;
+  margin: 75px auto 0 -50px;
   position: relative;
   stroke: #434140;
   text-align: left;
@@ -691,12 +804,18 @@ header ul li a:hover {
   box-sizing: border-box;
   height: 453px;
   line-height: 25.6px;
-  margin: -391px -60px 0 auto;
+  margin: -391px -53px 0 auto;
   position: relative;
   text-align: left;
   width: 462px;
 }
 
+.coord img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 600px;
+  background-position: 50% 50%;
+}
 .coord h2 {
   box-sizing: border-box;
   color: #fff;
