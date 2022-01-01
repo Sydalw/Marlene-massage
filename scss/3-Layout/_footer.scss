@@ -5,4 +5,19 @@ footer{
     background-color: $couleur_card3;
     color:white;
 
+    p {
+        box-sizing: border-box;
+        color: #fff;
+        font-size: .875rem;
+        line-height: 22.4px;
+        margin: 0px auto;
+        overflow-wrap: break-word;
+        padding: 0;
+        position: relative;
+        text-align: center;
+        width: 417px;
+        word-wrap: break-word;
+        padding:40px;
+    }
+
 }

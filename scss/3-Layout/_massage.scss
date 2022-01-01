@@ -1,0 +1,128 @@
+.massage {
+    border: 1px solid black;
+
+    &_img {
+        background-position: 50% 50%;
+        background-repeat: no-repeat no-repeat;
+        background-size: cover;
+        border-style: none;
+        box-sizing: border-box;
+        display: block;
+        //height: 519px;
+        height: 100%;
+        margin: -30px auto 30px 30px;
+        object-fit: cover;
+        overflow: hidden;
+        position: relative;
+        width: 435px;
+
+        @media (max-width: 1048px) {
+            width: 375px;
+        }
+
+        @media (max-width: 991px) {
+            width: 325px;
+        }
+
+        @media (max-width: 767px) {
+            width: 435px;
+        }
+    
+        @media (max-width: 575px) {
+            width: 325px;
+        }
+    }
+
+    &_boxesContainer {
+        min-height: 100%;
+    }
+
+    &_textContainer {
+        box-sizing: border-box;
+        color: #111;
+        display: flex;
+        flex: 1 1 0;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 25.6px;
+        max-width: 100%;
+        padding: 30px 30px 29px;
+        position: relative;
+        text-align: left;
+
+        @media (max-width: 767px) {
+        .u-section-2 .u-container-layout-3 {
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+        }
+
+        @media (max-width: 575px) {
+        .u-section-2 .u-container-layout-3 {
+            padding-right: 25px;
+            padding-left: 25px;
+        }
+        }
+
+        h2 {
+            color: #111;
+            flex-shrink: 0;
+            font-size: 3.75rem;
+            font-weight: 500;
+            line-height: 1.2;
+            margin: 0;
+            padding: 0;
+            @media (max-width: 767px) {
+                margin: 0 auto;
+            }
+        }
+
+        &_trait{
+            background-color: $couleur_card1;
+            box-sizing: border-box;
+            color: #fff;
+            flex-shrink: 0;
+            height: 15px;
+            line-height: 25.6px;
+            margin: 63px auto -10px 0;
+            position: relative;
+            width: 354px;
+
+            &_fin {
+                background-color: $couleur_card1;
+                box-sizing: border-box;
+                color: #fff;
+                flex-shrink: 0;
+                line-height: 25.6px;
+                margin: 20px auto -10px 0;
+                position: relative;
+                width: 354px;    
+                height:4px;
+            }
+
+            @media (max-width: 575px) {
+            .u-section-2 .u-shape-3 {
+                height: 17px;
+                width: 223px;
+            }
+            }
+
+            @media (max-width: 991px) {
+            .u-section-2 .u-shape-3 {
+                width: 300px;
+            }
+            }
+        }
+        p {
+            flex-shrink: 0;
+            line-height: 25.6px;
+            margin: 34px 0 0;
+            padding: 0;
+            text-align: justify;
+        }
+
+        span {
+            font-weight: bold;
+        }
+    }
+}

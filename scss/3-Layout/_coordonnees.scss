@@ -1,5 +1,17 @@
 .coord {
 
+    .dcContainer {
+        @media (max-width: 575px) {
+            flex-direction: column;
+        }
+    }
+
+    .doubleColonne{
+        @media (max-width: 575px) {
+            width:100%
+        }
+    }
+
     img {
         object-fit: cover;
         width:100%;
@@ -20,6 +32,14 @@
         position: relative;
         text-align: left;
         word-wrap: break-word;
+        @media (max-width: 767px) {
+            font-size: 1.75rem;
+        }
+    
+        @media (max-width: 575px) {
+            font-size: 1.25rem;
+            margin: 50px auto 0 auto;
+        }
     }
 
     &_row {
@@ -40,6 +60,9 @@
         text-align: left;
         transform-origin: left center 0;
         width: 51px;
+        @media (max-width: 575px) {
+            margin: 30px auto 0 auto;
+        }
     }
 
     p {
@@ -54,6 +77,16 @@
         position: relative;
         text-align: left;
         word-wrap: break-word;
+        @media (max-width: 767px) {
+            font-size: 0.875rem;
+        }
+    
+        @media (max-width: 575px) {
+            padding:0;
+            font-size: 0.875rem;
+            margin: 20px auto 0 auto;
+            text-align: center;
+        }
     }
 
     &_textMajorContainer {
@@ -73,13 +106,16 @@
         position: relative;
         stroke: #fff;
         text-align: left;
-        width: 471px;
+        min-width: 90%;
     }
 
     &_textContainer {
-        padding-left: 20px;
         display:flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
+        @media (max-width: 575px) {
+            height:100%;
+        }
     }
 }
