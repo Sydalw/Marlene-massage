@@ -455,15 +455,68 @@ header ul li a:hover {
 .banniere_height {
   height: 700px;
 }
-
-.verticalCentering {
-  width: 700px;
+.banniere .verticalCentering {
+  width: 100%;
   margin: auto 0;
   padding-top: 50px;
 }
 @media (max-width: 1048px) {
-  .verticalCentering {
+  .banniere .verticalCentering {
     padding-left: 40px;
+  }
+}
+.banniere h1 {
+  font-size: 5.25rem;
+  font-weight: 300;
+  line-height: 1.1;
+  max-width: fit-content;
+}
+@media (max-width: 991px) {
+  .banniere h1 h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 20px 0 0;
+  }
+}
+@media (max-width: 767px) {
+  .banniere h1 {
+    font-size: 4.25rem;
+  }
+  .banniere h1 h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 20px 0 0;
+  }
+}
+@media (max-width: 575px) {
+  .banniere h1 {
+    font-size: 2.25rem;
+  }
+  .banniere h1 h2 {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 20px 0 0;
+  }
+}
+.banniere h2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 20px 0 0;
+  max-width: fit-content;
+}
+@media (max-width: 767px) {
+  .banniere h2 {
+    margin: 10px 0 0;
+  }
+}
+@media (max-width: 575px) {
+  .banniere h2 {
+    font-size: 1rem;
+    margin: 0;
   }
 }
 
@@ -1285,6 +1338,7 @@ header ul li a:hover {
 }
 .formulaire a {
   margin-left: 15px;
+  color: #fff;
 }
 .formulaire_textMajorContainer {
   background-clip: padding-box;
@@ -1334,22 +1388,35 @@ header ul li a:hover {
   background-clip: padding-box;
   background-color: #fff;
   background-image: none;
-  border: 1px solid #b3b3b3;
   border-radius: 0;
   box-sizing: border-box;
   color: #111;
   cursor: text;
   display: block;
+  font-family: Glacial_indifference, "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
   height: auto;
   line-height: 25.6px;
-  margin-bottom: 20px;
+  margin: 0 34px 20px;
   overflow: visible;
   padding: 10px 12px;
   stroke: #b3b3b3;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   width: 100%;
+}
+.formulaire_formContainer form input:focus {
+  border: 2px solid blue;
+  background-color: #E8D8C8;
+}
+.formulaire_formContainer form input:invalid {
+  border: 2px solid red;
+}
+.formulaire_formContainer form input:valid {
+  border: 2px solid green;
+}
+.formulaire_formContainer form input:optional {
+  border-color: gray;
 }
 .formulaire_formContainer form textarea {
   background-clip: padding-box;
@@ -1361,11 +1428,12 @@ header ul li a:hover {
   color: #111;
   cursor: text;
   display: block;
+  font-family: Glacial_indifference, "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
   height: auto;
   line-height: 25.6px;
-  margin: 0;
+  margin: 0 34px 20px;
   overflow: auto;
   padding: 10px 12px;
   stroke: #b3b3b3;
@@ -1374,21 +1442,43 @@ header ul li a:hover {
   width: 100%;
   word-wrap: break-word;
 }
+.formulaire_formContainer form textarea:invalid {
+  border: 2px solid red;
+}
+.formulaire_formContainer form textarea:valid {
+  border: 2px solid green;
+}
+.formulaire_formContainer form textarea:focus {
+  background-color: #E8D8C8;
+}
 .formulaire_formContainer form .btnContainer {
   margin: auto;
 }
 .formulaire_inputContainer {
   box-sizing: border-box;
   color: #fff;
-  font-family: Glacial_indifference, "Open Sans", sans-serif;
   line-height: 25.6px;
   margin-bottom: 15px;
   padding-left: 15px;
   text-align: start;
   width: 100%;
 }
-.formulaire .btn {
-  justify-content: center;
+.formulaire #submit_form {
+  cursor: pointer;
+  background-color: #434140;
+  border: 0 none transparent;
+  box-sizing: border-box;
+  color: #fff !important;
+  letter-spacing: 2px;
+  margin: 30px auto 65px auto;
+  outline: 0;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  user-select: none;
+  vertical-align: middle;
+  width: fit-content;
 }
 
 footer {
@@ -1412,6 +1502,25 @@ footer p {
 
 .massage {
   border: 1px solid black;
+  display: block;
+}
+@media (max-width: 767px) {
+  .massage {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .massage .dcContainer {
+    flex-direction: column;
+  }
+  .massage .doubleColonne {
+    width: 100%;
+  }
+}
+@media (max-width: 575px) {
+  .massage {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 .massage_img {
   background-position: 50% 50%;
@@ -1419,7 +1528,6 @@ footer p {
   background-size: cover;
   border-style: none;
   box-sizing: border-box;
-  display: block;
   height: 100%;
   margin: -30px auto 30px 30px;
   object-fit: cover;
@@ -1439,16 +1547,41 @@ footer p {
 }
 @media (max-width: 767px) {
   .massage_img {
-    width: 435px;
+    width: 90%;
+    margin: -30px 30px 30px 30px;
   }
 }
-@media (max-width: 575px) {
-  .massage_img {
+.massage_carre {
+  background-color: #E8D8C8;
+  margin: 30px auto 0 -405px;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  width: 435px;
+  z-index: -1;
+}
+@media (max-width: 1048px) {
+  .massage_carre {
+    width: 375px;
+    margin: 30px auto 0 -345px;
+  }
+}
+@media (max-width: 991px) {
+  .massage_carre {
     width: 325px;
+    margin: 30px auto 0 -295px;
+  }
+}
+@media (max-width: 767px) {
+  .massage_carre {
+    width: 90%;
+    height: 95%;
+    margin: 30px -10px 60px -93%;
   }
 }
 .massage_boxesContainer {
   min-height: 100%;
+  display: flex;
 }
 .massage_textContainer {
   box-sizing: border-box;
@@ -1464,13 +1597,13 @@ footer p {
   text-align: left;
 }
 @media (max-width: 767px) {
-  .massage_textContainer .u-section-2 .u-container-layout-3 {
+  .massage_textContainer {
     padding-right: 10px;
     padding-left: 10px;
   }
 }
 @media (max-width: 575px) {
-  .massage_textContainer .u-section-2 .u-container-layout-3 {
+  .massage_textContainer {
     padding-right: 25px;
     padding-left: 25px;
   }
@@ -1487,6 +1620,7 @@ footer p {
 @media (max-width: 767px) {
   .massage_textContainer h2 {
     margin: 0 auto;
+    text-align: center;
   }
 }
 .massage_textContainer_trait {
@@ -1511,15 +1645,24 @@ footer p {
   width: 354px;
   height: 4px;
 }
-@media (max-width: 575px) {
-  .massage_textContainer_trait .u-section-2 .u-shape-3 {
-    height: 17px;
-    width: 223px;
+@media (max-width: 991px) {
+  .massage_textContainer_trait_fin {
+    width: 300px;
+  }
+}
+@media (max-width: 767px) {
+  .massage_textContainer_trait_fin {
+    width: 100%;
   }
 }
 @media (max-width: 991px) {
-  .massage_textContainer_trait .u-section-2 .u-shape-3 {
+  .massage_textContainer_trait {
     width: 300px;
+  }
+}
+@media (max-width: 767px) {
+  .massage_textContainer_trait {
+    width: 100%;
   }
 }
 .massage_textContainer p {

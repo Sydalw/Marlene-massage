@@ -75,6 +75,7 @@
 
     a {
         margin-left:15px;
+        color:#fff;
     }
 
     &_textMajorContainer {
@@ -128,22 +129,36 @@
                 background-clip: padding-box;
                 background-color: #fff;
                 background-image: none;
-                border: 1px solid #b3b3b3;
                 border-radius: 0;
                 box-sizing: border-box;
                 color: #111;
                 cursor: text;
                 display: block;
+                font-family: Glacial_indifference,"Open Sans",sans-serif;
                 font-size: 16px;
                 font-weight: 400;
                 height: auto;
                 line-height: 25.6px;
-                margin-bottom: 20px;
+                margin: 0 34px 20px;
                 overflow: visible;
                 padding: 10px 12px;
                 stroke: #b3b3b3;
                 transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
                 width: 100%;
+                
+                &:focus{
+                    border:2px solid blue;
+                    background-color: $couleur_card1;
+                }
+                &:invalid {
+                    border:2px solid red;
+                }
+                &:valid{
+                    border:2px solid green;
+                }
+                &:optional {
+                    border-color: gray;
+                  }
             }
         
             textarea {
@@ -156,11 +171,12 @@
                 color: #111;
                 cursor: text;
                 display: block;
+                font-family: Glacial_indifference,"Open Sans",sans-serif;
                 font-size: 16px;
                 font-weight: 400;
                 height: auto;
                 line-height: 25.6px;
-                margin: 0;
+                margin: 0 34px 20px;
                 overflow: auto;
                 padding: 10px 12px;
                 stroke: #b3b3b3;
@@ -168,6 +184,16 @@
                 white-space: pre-wrap;
                 width: 100%;
                 word-wrap: break-word;
+                
+                &:invalid {
+                    border:2px solid red;
+                }
+                &:valid{
+                    border:2px solid green;
+                }
+                &:focus {
+                    background-color: $couleur_card1;
+                }
             }
 
             .btnContainer{
@@ -179,7 +205,6 @@
     &_inputContainer {
         box-sizing: border-box;
         color: #fff;
-        font-family: Glacial_indifference,"Open Sans",sans-serif;
         line-height: 25.6px;
         margin-bottom: 15px;
         padding-left: 15px;
@@ -187,7 +212,21 @@
         width: 100%;
     }
 
-    .btn {
-        justify-content: center;
+    #submit_form {
+        cursor:pointer;
+        background-color: $couleur_card3;
+        border: 0 none transparent;
+        box-sizing: border-box;
+        color: #fff !important;
+        letter-spacing: 2px;
+        margin: 30px auto 65px auto;
+        outline: 0;
+        padding: 10px 30px;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        user-select: none;
+        vertical-align: middle;
+        width:fit-content;
     }
 }

@@ -18,26 +18,73 @@
     &_height{
         height:700px;
     }
-}
-
-.verticalCentering {
-    width:700px;
-    margin: auto 0;
-    padding-top:50px;
-
-    @media (max-width: 1048px) {
-        padding-left:40px;
+    
+    .verticalCentering {
+        width:100%;
+        margin: auto 0;
+        padding-top:50px;
+        
+        @media (max-width: 1048px) {
+            padding-left:40px;
+        }
     }
-}
-@media (max-width: 991px) {
 
-}
+    h1 {
+        font-size: 5.25rem;
+        font-weight: 300;
+        line-height: 1.1;
+        max-width:fit-content;
 
-@media (max-width: 767px) {
+        @media (max-width: 991px) {       
+            h2 {
+                font-size: 1.5rem;
+                font-weight: 500;
+                line-height: 1.2;
+                margin: 20px 0 0;
+            }
+        }
+        
+        @media (max-width: 767px) {
+                font-size: 4.25rem;
+        
+            h2 {
+                font-size: 1.5rem;
+                font-weight: 500;
+                line-height: 1.2;
+                margin: 20px 0 0;
+            }
+        }
+        
+        @media (max-width: 575px) {
+                font-size: 2.25rem;
+        
+            h2 {
+                font-size: 1rem;
+                font-weight: 500;
+                line-height: 1.2;
+                margin: 20px 0 0;
+            }
+        }
+    }
 
-}
+    h2 {
+        font-size: 1.5rem;
+        font-weight: 300;
+        line-height: 1.2;
+        margin: 20px 0 0;
+        max-width:fit-content;
 
-@media (max-width: 575px) {
-
+        @media (max-width: 991px) {       
+        }
+        
+        @media (max-width: 767px) {
+            margin: 10px 0 0;
+        }
+        
+        @media (max-width: 575px) {
+            font-size: 1rem;
+            margin: 0;
+        }
+    } 
 }
 

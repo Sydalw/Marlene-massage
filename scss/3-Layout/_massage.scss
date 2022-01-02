@@ -1,5 +1,24 @@
 .massage {
     border: 1px solid black;
+    display:block;
+
+    @media (max-width: 767px) {
+
+        margin-left:40px;
+        margin-right:40px;
+
+        .dcContainer {
+            flex-direction:column;
+        }
+
+        .doubleColonne {
+            width:100%;
+        } 
+    }
+    @media (max-width: 575px) {
+        margin-left:0;
+        margin-right:0;
+    }
 
     &_img {
         background-position: 50% 50%;
@@ -7,7 +26,6 @@
         background-size: cover;
         border-style: none;
         box-sizing: border-box;
-        display: block;
         //height: 519px;
         height: 100%;
         margin: -30px auto 30px 30px;
@@ -25,16 +43,48 @@
         }
 
         @media (max-width: 767px) {
-            width: 435px;
+            width:90%;
+            margin:-30px 30px 30px 30px;
         }
     
         @media (max-width: 575px) {
+
+        }
+    }
+
+    &_carre {
+        background-color: $couleur_card1;
+        margin: 30px auto 0 -405px;
+        overflow: hidden;
+        position: relative;
+        height:100%;
+        width: 435px;
+        z-index:-1;
+
+        @media (max-width: 1048px) {
+            width: 375px;
+            margin: 30px auto 0 -345px;
+        }
+
+        @media (max-width: 991px) {
             width: 325px;
+            margin: 30px auto 0 -295px;
+
+        }
+
+        @media (max-width: 767px) {
+            width:90%;
+            height:95%;
+            margin:30px -10px 60px -93%;
+        }
+    
+        @media (max-width: 575px) {
         }
     }
 
     &_boxesContainer {
         min-height: 100%;
+        display:flex;
     }
 
     &_textContainer {
@@ -51,17 +101,13 @@
         text-align: left;
 
         @media (max-width: 767px) {
-        .u-section-2 .u-container-layout-3 {
             padding-right: 10px;
             padding-left: 10px;
         }
-        }
 
         @media (max-width: 575px) {
-        .u-section-2 .u-container-layout-3 {
             padding-right: 25px;
             padding-left: 25px;
-        }
         }
 
         h2 {
@@ -74,6 +120,7 @@
             padding: 0;
             @media (max-width: 767px) {
                 margin: 0 auto;
+                text-align: center;
             }
         }
 
@@ -98,19 +145,23 @@
                 position: relative;
                 width: 354px;    
                 height:4px;
-            }
 
-            @media (max-width: 575px) {
-            .u-section-2 .u-shape-3 {
-                height: 17px;
-                width: 223px;
-            }
-            }
+                @media (max-width: 991px) {
+                    width: 300px;
+                }
 
+                @media (max-width: 767px) {
+                    width:100%;
+                }
+            }
+            
             @media (max-width: 991px) {
-            .u-section-2 .u-shape-3 {
                 width: 300px;
             }
+            
+            @media (max-width: 767px) {
+                width:100%;
+            
             }
         }
         p {
