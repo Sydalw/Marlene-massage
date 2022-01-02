@@ -37,8 +37,8 @@
           <div class="">
             <ul class="">
               <li class=""><a class="" href="./index.html">Accueil</a></li>
-              <li class=""><a class="" href="#">Les massages</a></li>
-              <li class=""><a class="" href="#">Parrainage</a></li>
+              <li class="">Les massages</li>
+              <li class=""><a class="" href="./parrainage.html">Parrainage</a></li>
             </ul>
           </div>
           <div class="hidden">
@@ -48,8 +48,8 @@
                 </div>
                 <ul class="">
                   <li class=""><a class="" href="./index.html">Accueil</a></li>
-                  <li class=""><a class="" href="#">Les massages</a></li>
-                  <li class=""><a class="" href="#">Parrainage</a></li>
+                  <li class="">Les massages</li>
+                  <li class=""><a class="" href="./parrainage.html">Parrainage</a></li>
                 </ul>
               </div>
             </div>
@@ -128,7 +128,7 @@
             <div class="dcContainer">
               <div class="doubleColonne">
                 <div class="massage_boxesContainer">
-                  <img class="massage_img" src="images/Photos/20211023-R-IMG_1339.jpg">
+                  <img class="massage_img" src="images/Photos/massage essentiel.jpg">
                   <div class="massage_carre"></div>
                 </div>
               </div>
@@ -188,7 +188,7 @@
             <div class="dcContainer">
               <div class="doubleColonne">
                 <div class="massage_boxesContainer">
-                  <img class="massage_img" src="images/Photos/20211023-R-IMG_1345.jpg">
+                  <img class="massage_img" src="images/Photos/toucher maternant.jpeg">
                   <div class="massage_carre"></div>
                 </div>
               </div>
@@ -249,7 +249,7 @@
             <div class="dcContainer">
               <div class="doubleColonne">
                 <div class="massage_boxesContainer">
-                  <img class="massage_img" src="images/Photos/20211023-R-IMG_1380.jpg">
+                  <img class="massage_img" src="images/Photos/relaxinésie.jpg">
                   <div class="massage_carre"></div>
                 </div>
               </div>
@@ -313,7 +313,7 @@
             <div class="dcContainer">
               <div class="doubleColonne">
                 <div class="massage_boxesContainer">
-                  <img class="massage_img" src="images/Photos/photo3.jpg">
+                  <img class="massage_img" src="images/Photos/reflexiologie plantaire.jpg">
                   <div class="massage_carre"></div>
                 </div>
               </div>
@@ -346,27 +346,38 @@
               <div class="formulaire_trait"></div>
               <p class="">Si vous souhaitez en savoir plus sur mes prestations, je serai ravie de pouvoir répondre au message que vous voudrez bien me laisser.</p>
               <div class="formulaire_formContainer">
-                <form action="#" method="POST" class="" source="custom"><!-- hidden inputs for siteId and pageId -->
-                  <div class="formulaire_inputContainer">
-                    <label for="name-8f21" class="hidden">Name</label>
-                    <input type="text" placeholder="Entrez votre nom" id="name-8f21" name="name" class="" required="">
-                  </div><!-- always visible -->
-                  <div class="formulaire_inputContainer">
-                    <label for="email-8f21" class="hidden">Email</label>
-                    <input type="email" placeholder="Entrez votre adresse email" id="email-8f21" name="email" class="" required="">
-                  </div>
-                  <div class="formulaire_inputContainer">
-                    <label for="message-8f21" class="hidden">Message</label>
-                    <textarea placeholder="Rédigez votre message" rows="4" cols="50" id="message-8f21" name="message" class="" required=""></textarea>
-                  </div>
-                  <div class="btnContainer">
-                    <a href="#" class="btn">Envoyer</a>
-                    <input type="submit" value="submit" class="hidden">
-                  </div>
-                  <div class="hidden"> Merci beaucoup. Votre message a été envoyé </div>
-                  <div class="hidden"> Votre message n'a pas pu être envoyé. Veuillez réessayer plus tard </div>
-                  <input class="hidden" type="hidden" value="" name="recaptchaResponse">
-                </form>
+                <form action="https://postmail.invotes.com/send" method="post" id="email_form">
+
+                  <input type="text" name="subject" placeholder="Titre de votre message*" required="required" />
+                  <input type="hidden" name="access_token" value="6unafkkcn8mz5wwlq1pxmmhb" />
+                    <!-- return urls can be fully qualified -OR-
+                      start with / for root relative -OR-
+                      start with . for url relative --> 
+                  <!--<input type="hidden" name="success_url" value=".?message=Email+Successfully+Sent%21&isError=0" />
+                  <input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />-->
+                  
+                  <input type="hidden" name="success_url" value="http://127.0.0.1:5500/Reworked/index.html" />
+                  <input type="hidden" name="error_url" value="http://127.0.0.1:5500/Reworked/index.html" />
+
+                  <input type="text" name="extra_name" placeholder="Votre nom*" required="required"/>
+                  <!-- set the reply-to address -->
+                  <input type="text" name="reply_to" placeholder="Votre email*" required="required"/>
+
+                  <!-- to append extra fields, use the extra_ prefix.
+                      Entries will be appended to your message body. -->
+                  <input type="text" name="extra_phone_number" placeholder="Votre téléphone" />
+
+                  <!-- to split your message into 160 chars
+                      for an sms gateway -->
+                  <!-- <input type="hidden"
+                              name="sms_format" value="true" /> -->
+
+                  <textarea name="text" placeholder="Message*" required="required"></textarea>
+                
+                  <input id="submit_form" type="submit" value="Send" />
+                  <!-- not required, but we'd appreciate it if you'd link to us somewhere on your site -->
+                  <p>Powered by <a href="https://postmail.invotes.com" target="_blank">PostMail</a></p>
+              </form>
               </div>
             </div>
           </div>     

@@ -62,7 +62,7 @@ body h2 {
 
 section {
   display: block;
-  margin-top: 70px;
+  margin-top: 80px;
   margin-bottom: 0;
 }
 
@@ -1526,6 +1526,7 @@ footer p {
   background-position: 50% 50%;
   background-repeat: no-repeat no-repeat;
   background-size: cover;
+  background-color: #434140;
   border-style: none;
   box-sizing: border-box;
   height: 100%;
@@ -1534,6 +1535,20 @@ footer p {
   overflow: hidden;
   position: relative;
   width: 435px;
+  display: flex;
+  flex-direction: column;
+}
+.massage_img h3 {
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  margin: auto 20px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+.massage_img p {
+  color: #fff;
+  text-align: center;
 }
 @media (max-width: 1048px) {
   .massage_img {

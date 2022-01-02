@@ -24,6 +24,7 @@
         background-position: 50% 50%;
         background-repeat: no-repeat no-repeat;
         background-size: cover;
+        background-color: $couleur_card3;
         border-style: none;
         box-sizing: border-box;
         //height: 519px;
@@ -33,6 +34,21 @@
         overflow: hidden;
         position: relative;
         width: 435px;
+        display:flex;
+        flex-direction: column;
+
+        h3 {
+            color: #fff;
+            font-size: 2rem;
+            text-align: center;
+            margin: auto 20px;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+        p {
+            color: #fff;
+            text-align: center;
+        }
 
         @media (max-width: 1048px) {
             width: 375px;
