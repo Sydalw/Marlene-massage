@@ -1,11 +1,11 @@
 .accroche {
 
-    @media (max-width: 1048px) {
+    @media (max-width: 1700px) {
         flex-direction: column;
     }
     
     .doubleColonne {
-        @media (max-width: 1048px) {
+        @media (max-width: 1700px) {
             width:100%;        
         }
     }
@@ -83,7 +83,7 @@
         p {
             box-sizing: border-box;
             color: #111;
-            line-height: 2.5rem;
+            //line-height: 2rem;
             margin: 30px 0 0;
             overflow-wrap: break-word;
             padding: 0;
@@ -93,6 +93,7 @@
             font-size: 1.25rem;
             @media (max-width: 1048px) {
                 font-size: 1rem;
+                //line-height: 2rem;
             }
         }
         span {

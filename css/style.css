@@ -134,6 +134,11 @@ li {
   position: relative;
   z-index: 1;
 }
+@media (max-width: 575px) {
+  .btn {
+    font-size: 11px;
+  }
+}
 .btn:hover::after {
   opacity: 1;
 }
@@ -456,13 +461,17 @@ header ul li a:hover {
   height: 700px;
 }
 .banniere .verticalCentering {
-  width: 100%;
   margin: auto 0;
   padding-top: 50px;
 }
 @media (max-width: 1048px) {
   .banniere .verticalCentering {
     padding-left: 40px;
+  }
+}
+@media (max-width: 991px) {
+  .banniere .verticalCentering {
+    max-width: 720px;
   }
 }
 .banniere h1 {
@@ -531,6 +540,11 @@ header ul li a:hover {
 .whoIam_boxesContainer {
   margin-left: 40px;
 }
+@media (max-width: 575px) {
+  .whoIam_boxesContainer {
+    margin: 0 auto;
+  }
+}
 .whoIam_carreGris {
   background-color: #A0A0A0;
   background-image: none;
@@ -552,12 +566,19 @@ header ul li a:hover {
 }
 @media (max-width: 767px) {
   .whoIam_carreGris {
-    width: 462px;
+    width: 442px;
+    margin: -505px 0 0 75px;
   }
 }
 @media (max-width: 575px) {
   .whoIam_carreGris {
-    width: 312px;
+    width: 282px;
+  }
+}
+@media (max-width: 374px) {
+  .whoIam_carreGris {
+    width: 252px;
+    margin: -515px 0 0 55px;
   }
 }
 .whoIam_bordureGrise {
@@ -586,7 +607,13 @@ header ul li a:hover {
 }
 @media (max-width: 575px) {
   .whoIam_bordureGrise {
-    width: 334px;
+    width: 304px;
+  }
+}
+@media (max-width: 374px) {
+  .whoIam_bordureGrise {
+    width: 274px;
+    height: 573px;
   }
 }
 .whoIam_img {
@@ -620,7 +647,13 @@ header ul li a:hover {
 }
 @media (max-width: 575px) {
   .whoIam_img {
-    width: 325px;
+    width: 295px;
+  }
+}
+@media (max-width: 374px) {
+  .whoIam_img {
+    width: 265px;
+    margin: -572px auto 65px 20px;
   }
 }
 .whoIam_textContainer {
@@ -652,6 +685,12 @@ header ul li a:hover {
     padding-right: 40px;
     margin: 40px auto;
     text-align: center;
+  }
+}
+@media (max-width: 575px) {
+  .whoIam_textContainer {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 .whoIam_textContainer h2 {
@@ -690,12 +729,12 @@ header ul li a:hover {
   padding: 0;
 }
 
-@media (max-width: 1048px) {
+@media (max-width: 1700px) {
   .accroche {
     flex-direction: column;
   }
 }
-@media (max-width: 1048px) {
+@media (max-width: 1700px) {
   .accroche .doubleColonne {
     width: 100%;
   }
@@ -756,7 +795,6 @@ header ul li a:hover {
 .accroche_textContainer p {
   box-sizing: border-box;
   color: #111;
-  line-height: 2.5rem;
   margin: 30px 0 0;
   overflow-wrap: break-word;
   padding: 0;
@@ -786,6 +824,11 @@ header ul li a:hover {
   position: relative;
   text-align: center;
   word-wrap: break-word;
+}
+@media (max-width: 767px) {
+  .testimonial h2 {
+    font-size: 2.25rem;
+  }
 }
 .testimonial_row {
   display: flex;
@@ -859,7 +902,7 @@ header ul li a:hover {
 }
 @media (max-width: 767px) {
   .parrainage .dcContainer {
-    display: block;
+    flex-direction: column;
   }
 }
 @media (max-width: 767px) {
@@ -871,25 +914,26 @@ header ul li a:hover {
   padding-left: 10px;
   padding-right: 40px;
   display: flex;
-  flex: 0 0 45%;
+  flex: 0 0 40%;
   max-height: 100%;
-  max-width: 45%;
+  max-width: 40%;
   min-height: 618px;
-  min-width: 45%;
+  min-width: 40%;
   position: relative;
   text-align: left;
 }
 @media (max-width: 991px) {
   .parrainage .doubleColonneG {
-    flex: 0 0 30%;
-    max-width: 30%;
-    min-width: 30%;
+    flex: 0 0 35%;
+    max-width: 35%;
+    min-width: 35%;
   }
 }
 @media (max-width: 767px) {
   .parrainage .doubleColonneG {
-    max-width: 100%;
-    min-width: 100%;
+    margin: 0 auto;
+    max-width: 80%;
+    min-height: fit-content;
   }
 }
 .parrainage .doubleColonneD {
@@ -905,26 +949,27 @@ header ul li a:hover {
 }
 @media (max-width: 991px) {
   .parrainage .doubleColonneD {
-    flex: 0 0 70%;
-    max-width: 70%;
-    min-width: 70%;
+    flex: 0 0 65%;
+    max-width: 65%;
+    min-width: 65%;
   }
 }
 @media (max-width: 767px) {
   .parrainage .doubleColonneD {
+    flex: 0 0 100%;
+    justify-content: center;
     max-width: 100%;
-    min-width: 100%;
-    margin-top: -300px;
-    margin-left: -130px;
   }
 }
 .parrainage_textContainer {
   margin-top: 80px;
   margin-right: 80px;
+  width: 100%;
 }
 @media (max-width: 767px) {
   .parrainage_textContainer {
     margin-right: 0;
+    height: fit-content;
   }
 }
 .parrainage h2 {
@@ -945,11 +990,12 @@ header ul li a:hover {
   .parrainage h2 {
     margin-top: 55px;
     padding-right: 80px;
-    font-size: 3.75rem;
+    font-size: 2.25rem;
   }
 }
 @media (max-width: 767px) {
   .parrainage h2 {
+    font-size: 3.25rem;
     margin-top: 0;
     padding-right: 0;
     text-align: center;
@@ -962,14 +1008,13 @@ header ul li a:hover {
   line-height: 25.6px;
   margin: 30px 0 0;
   overflow-wrap: break-word;
-  padding: 0;
+  padding-right: 10px;
   position: relative;
   text-align: left;
   word-wrap: break-word;
 }
 @media (max-width: 991px) {
   .parrainage p {
-    padding-right: 80px;
     font-size: 0.875rem;
     margin-top: 55px;
   }
@@ -1049,6 +1094,10 @@ header ul li a:hover {
     margin: 30px auto 0 auto;
   }
 }
+.parrainage_boxesContainer {
+  margin: auto;
+  width: fit-content;
+}
 .parrainage img {
   background-position: 80.55% 50%;
   background-repeat: no-repeat no-repeat;
@@ -1059,7 +1108,7 @@ header ul li a:hover {
   display: block;
   height: 503px;
   line-height: 25.6px;
-  margin: -616px auto 0 0;
+  margin: -586px auto 0 0;
   object-fit: cover;
   object-position: 80.55% 50%;
   overflow: hidden;
@@ -1074,20 +1123,15 @@ header ul li a:hover {
 }
 @media (max-width: 991px) {
   .parrainage img {
-    width: 300px;
+    width: 60%;
     height: 315px;
-    margin: -396px auto 0 180px;
+    margin: -396px auto 0 60px;
   }
 }
 @media (max-width: 767px) {
   .parrainage img {
-    width: 465px;
-  }
-}
-@media (max-width: 575px) {
-  .parrainage img {
-    width: 300px;
-    height: 300px;
+    width: 80%;
+    margin: -396px auto 0 50px;
   }
 }
 .parrainage .bordureGrise {
@@ -1096,7 +1140,7 @@ header ul li a:hover {
   box-sizing: border-box;
   height: 479px;
   line-height: 25.6px;
-  margin: 75px auto 0 -50px;
+  margin: 0px auto 0 -50px;
   position: relative;
   stroke: #434140;
   text-align: left;
@@ -1109,19 +1153,14 @@ header ul li a:hover {
 }
 @media (max-width: 991px) {
   .parrainage .bordureGrise {
-    width: 319px;
+    width: 60%;
     height: 319px;
-    margin: 175px auto 0 150px;
+    margin: 0 0 0 20px;
   }
 }
 @media (max-width: 767px) {
   .parrainage .bordureGrise {
-    width: 419px;
-  }
-}
-@media (max-width: 575px) {
-  .parrainage .bordureGrise {
-    width: 269px;
+    width: 80%;
   }
 }
 .parrainage .carreGris {
@@ -1142,22 +1181,17 @@ header ul li a:hover {
 }
 @media (max-width: 991px) {
   .parrainage .carreGris {
-    width: 352px;
+    width: 60%;
     height: 352px;
-    margin: -301px -33px 0 auto;
+    margin: -301px 80px 0 auto;
   }
 }
 @media (max-width: 767px) {
   .parrainage .carreGris {
-    width: 402px;
+    width: 80%;
+    margin: -301px 0px 0 auto;
   }
 }
-@media (max-width: 575px) {
-  .parrainage .carreGris {
-    width: 252px;
-  }
-}
-
 @media (max-width: 575px) {
   .coord .dcContainer {
     flex-direction: column;
@@ -1507,9 +1541,13 @@ footer p {
   padding: 0;
   position: relative;
   text-align: center;
-  width: 417px;
   word-wrap: break-word;
   padding: 40px;
+}
+@media (max-width: 374px) {
+  footer p {
+    padding: 40px 0 20px 0;
+  }
 }
 
 .massage {
@@ -1578,6 +1616,11 @@ footer p {
     margin: -30px 30px 30px 30px;
   }
 }
+@media (max-width: 575px) {
+  .massage_img {
+    margin: -30px 15px 30px 10px;
+  }
+}
 .massage_carre {
   background-color: #E8D8C8;
   margin: 30px auto 0 -405px;
@@ -1604,6 +1647,11 @@ footer p {
     width: 90%;
     height: 95%;
     margin: 30px -10px 60px -93%;
+  }
+}
+@media (max-width: 575px) {
+  .massage_carre {
+    margin: 10px -15px 60px -90%;
   }
 }
 .massage_boxesContainer {

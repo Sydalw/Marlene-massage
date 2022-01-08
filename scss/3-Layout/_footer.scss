@@ -15,9 +15,11 @@ footer{
         padding: 0;
         position: relative;
         text-align: center;
-        width: 417px;
         word-wrap: break-word;
         padding:40px;
+        @media (max-width: 374px) {
+            padding:40px 0 20px 0;
+        }
     }
 
 }
