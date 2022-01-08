@@ -198,63 +198,87 @@ li {
 
 header {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
   margin: 20px 0;
   background-color: white;
 }
-header svg {
-  width: 20px;
-  height: 20px;
-  color: #111;
-  fill: #111;
-  margin-top: 30px;
-}
-header .menu {
-  display: none;
-}
-@media (max-width: 575px) {
-  header .menu {
-    display: block;
-  }
-}
-header .logo {
-  width: 64px;
-}
-header ul {
-  display: flex;
-  margin-top: 10px;
-  padding-top: 20px;
-}
-header ul li {
-  margin: 0 20px 0 20px;
-}
-header ul li a:hover {
-  color: red;
-}
-@media (max-width: 575px) {
-  header ul {
-    display: none;
-  }
-}
-
-.header {
-  width: 1140px;
+header .header {
+  margin: 20px 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   height: 70px;
 }
 @media (max-width: 1048px) {
-  .header {
-    padding-left: 40px;
+  header .header {
+    margin-left: 40px;
   }
 }
 @media (max-width: 575px) {
-  .header {
-    padding-left: 20px;
+  header .header {
+    margin-left: 20px;
   }
 }
+header .header svg {
+  width: 20px;
+  height: 20px;
+  color: #111;
+  fill: #111;
+  margin-top: 30px;
+}
+header .header .hamburger {
+  display: none;
+}
+@media (max-width: 575px) {
+  header .header .hamburger {
+    display: block;
+  }
+}
+header .header .logo {
+  width: 64px;
+}
+header .header .menu_inline ul {
+  display: flex;
+  margin-top: 10px;
+  padding-top: 20px;
+}
+header .header .menu_inline ul li {
+  margin: 0 20px 0 20px;
+}
+header .header .menu_inline ul li a:hover {
+  color: red;
+}
+@media (max-width: 575px) {
+  header .header .menu_inline ul {
+    display: none;
+  }
+}
+header .menu_mobile {
+  display: none;
+}
+@media (max-width: 575px) {
+  header .menu_mobile {
+    display: block;
+  }
+}
+header .menu_mobile div {
+  display: flex;
+  flex-direction: column;
+}
+header .menu_mobile div a {
+  margin: 0;
+  padding-left: 20px;
+  padding-top: 20px;
+  height: 45px;
+}
+header .menu_mobile div a:hover {
+  background-color: #E8D8C8;
+  cursor: pointer;
+}
 
+/*nav{
+    display:flex;
+}*/
 .cardLine {
   display: flex;
   flex-wrap: wrap;
