@@ -1,6 +1,8 @@
 .cardLine{
     display:flex;
     flex-wrap: wrap;
+
+
     @media (max-width: 1048px) {
         padding-left: 40px;
         padding-right: 40px;
@@ -32,6 +34,7 @@
 
         &_1 {
             background-color: $couleur_card1;
+            //z-index: 1000;
         }
         &_2 {
             background-image: url("../images/5919fed0-9290-0161-07e7-b4aac8e308ea.jpg");

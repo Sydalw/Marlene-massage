@@ -1,0 +1,150 @@
+.navigationCheckbox {
+    display: none;
+}
+
+.navigationBg {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 40px;
+    right: 25px;
+    background-color: $couleur_card1;
+    opacity:0.75;
+    //background-image: radial-gradient($couleur_card1, $couleur_card2);
+    z-index: 1000;
+    transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+    display:none;
+    @media (max-width: 575px) {
+        display:block;
+    }
+}
+
+
+.navigationBtn {
+    background-color: #fff;
+    height: 3rem;
+    width: 3rem;
+    position: fixed;
+    top: 30px;
+    right: 20px;
+    border-radius: 50%;
+    z-index: 4000;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,0.1);
+    text-align: center;
+    cursor: pointer;
+    display:none;
+    @media (max-width: 575px) {
+        display:block;
+    }
+}
+
+
+.navigationIcon {
+    position: relative;
+    margin-top: 1.5rem;
+    width: 1.5rem;
+    height: 2px;
+    background-color: #333;
+
+    display:none;
+    @media (max-width: 575px) {
+        display:inline-block;
+    }
+}
+
+.navigationIcon::before,
+.navigationIcon::after {
+    width: 1.5rem;
+    height: 2px;
+    background-color: #333;
+    display: inline-block;
+    content: "";
+    position: absolute;
+    left: 0;
+    transition: all .2s;
+    display:none;
+    @media (max-width: 575px) {
+        display:block;
+    }
+}
+
+.navigationIcon::before {
+    top: -.8rem;
+    display:none;
+    @media (max-width: 575px) {
+        display:block;
+    }
+}
+
+.navigationIcon::after {
+    top: .8rem;
+    display:none;
+    @media (max-width: 575px) {
+        display:block;
+    }
+}
+
+
+.nav {
+    height: 100%;
+    position: fixed;
+    width: 0%;
+    opacity: 0;
+    z-index: 1500;
+    transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+
+.navigationListe {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translate(-150%, 5%);
+    text-align: center;
+    width: 100%;
+    background-color: darken($couleur_card1,10%);
+    //ox-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+
+
+.liens {
+    display: block;
+    //margin-top: 1rem;
+    color: #111;
+    text-decoration: none;
+    height:60px;
+    padding-top:30px;
+    border-top:1px solid $couleur_card1;
+    
+    &:hover {
+        background-color: #fff;
+        cursor:pointer;
+    }
+}
+
+
+.navigationCheckbox:checked ~ .navigationBg {
+    transform: scale(90);
+}
+
+
+.navigationCheckbox:checked ~ .nav {
+    opacity: 1;
+    width: 100%;
+}
+
+
+.navigationCheckbox:checked+ .navigationBtn .navigationIcon {
+    background-color: transparent;
+}
+
+.navigationCheckbox:checked+ .navigationBtn .navigationIcon::before {
+    top: 0;
+    transform: rotate(135deg);
+}
+.navigationCheckbox:checked+ .navigationBtn .navigationIcon::after {
+    top: 0;
+    transform: rotate(-135deg);
+}

@@ -20,35 +20,45 @@
     <meta property="og:type" content="website">
   </head>
   <body data-home-page="Accueil.html" data-home-page-title="Marlène Massage" class="">
-    <header class="colonneCentrale">
-      <div class="header">
-        <div>
-          <a href="./index.html" class="">
-            <img src="images/NENUPHAR.png" class="logo">
-          </a>
-        </div>
-        <nav class="">
-          <div class="hamburger">
-            <a class="" href="#">
-              <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
-              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><symbol id="menu-hamburger" viewBox="0 0 16 16" style="width: 16px; height: 16px;"><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect></symbol></defs></svg>
+    <header class="">
+      <div class="colonneCentrale">
+
+        <div class="header">
+          <div style="z-index:3000;">
+            <a href="./index.html" class="">
+              <img src="images/NENUPHAR.png" class="logo">
             </a>
           </div>
-          <div class="menu_inline">
-            <div class="">
-              <ul class="">
-                <li class="">Accueil</li>
-                <li class=""><a class="" href="./massages.html">Les massages</a></li>
-                <li class=""><a class="" href="./parrainage.html">Parrainage</a></li>
-              </ul>
+          <nav class="">
+            <!--<div class="hamburger">
+              <a class="" href="#">
+                <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><symbol id="menu-hamburger" viewBox="0 0 16 16" style="width: 16px; height: 16px;"><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect></symbol></defs></svg>
+              </a>
+            </div>-->
+            <div class="navigation">
+              <input type="checkbox" class="navigationCheckbox" id="navi">
+              <label for="navi" class="navigationBtn">
+                <span class="navigationIcon">&nbsp;</span>
+              </label>
+              <div class="navigationBg">&nbsp;</div>
+              <div class="nav" style="z-index:6000;">
+                <div class="navigationListe">
+                  <a class="liens" href="./massages.html">Les massages</a>
+                  <a class="liens" href="./parrainage.html">Parrainage</a>
+                </div>
+              </div>
             </div>
-          </div>
-        </nav>
-      </div>
-      <div class="menu_mobile">
-        <div class="">
-          <a class="" href="./massages.html">Les massages</a>
-          <a class="" href="./parrainage.html">Parrainage</a>
+            <div class="menu_inline">
+              <div class="">
+                <ul>
+
+                  <li class=""><a class="" href="./massages.html">Les massages</a></li>
+                  <li class=""><a class="" href="./parrainage.html">Parrainage</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
         </div>
       </div>
     </header>

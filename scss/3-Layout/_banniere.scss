@@ -13,8 +13,8 @@
     overflow: visible;
     position: relative;
     vertical-align: middle;
-    z-index:-11;
-
+    z-index:-3000;
+    margin-top: 120px;
     &_height{
         height:700px;
     }
