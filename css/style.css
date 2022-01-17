@@ -1482,11 +1482,7 @@ header .header .menu_inline ul li a:hover {
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   width: 100%;
 }
-.formulaire_formContainer form input:focus {
-  border: 2px solid blue;
-  background-color: #E8D8C8;
-}
-.formulaire_formContainer form input:invalid {
+.formulaire_formContainer form input:focus:invalid {
   border: 2px solid red;
 }
 .formulaire_formContainer form input:valid {
@@ -1519,7 +1515,7 @@ header .header .menu_inline ul li a:hover {
   width: 100%;
   word-wrap: break-word;
 }
-.formulaire_formContainer form textarea:invalid {
+.formulaire_formContainer form textarea:focus:invalid {
   border: 2px solid red;
 }
 .formulaire_formContainer form textarea:valid {
