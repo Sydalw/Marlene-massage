@@ -102,6 +102,9 @@
         stroke: #fff;
         text-align: left;
         width: calc(100%-80px);
+        @media (max-width: 575px) {
+            margin:0;
+        }
     }
 
     &_textContainer {
@@ -109,6 +112,9 @@
         display:flex;
         flex-direction: column;
         justify-content: center;
+        @media (max-width: 575px) {
+            padding: 0;
+        }
     }
 
     &_formContainer {
@@ -174,7 +180,7 @@
                 font-family: Glacial_indifference,"Open Sans",sans-serif;
                 font-size: 16px;
                 font-weight: 400;
-                height: auto;
+                height: 200px;
                 line-height: 25.6px;
                 margin: 0 34px 20px;
                 overflow: auto;
@@ -220,7 +226,6 @@
         color: #fff !important;
         letter-spacing: 2px;
         margin: 30px auto 65px auto;
-        outline: 0;
         padding: 10px 30px;
         text-align: center;
         text-decoration: none;
@@ -228,5 +233,27 @@
         user-select: none;
         vertical-align: middle;
         width:fit-content;
+
+        position:relative;
+        z-index: 1;
+
+        &:hover{
+            &::after{
+                opacity:1;
+            }
+        }
+        
+        &::after{
+            content:"";
+            position:absolute;
+            top:0;
+            right:0;
+            bottom:0;
+            left:0;
+            background-image: $mix_p_s_dark;
+            opacity: 0;
+            z-index:-1;
+            transition: opacity 1000ms;
+        }
     }
 }

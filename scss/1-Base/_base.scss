@@ -49,7 +49,11 @@ section {
 a{
     cursor:pointer;
     text-decoration: none;
-    color:black;
+    color:#fff;
+
+    &:hover {
+        color:orangered;
+    }
     
     &:visited{
         color:black;
