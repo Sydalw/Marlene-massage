@@ -254,8 +254,11 @@ header .header .menu_inline ul {
 header .header .menu_inline ul li {
   margin: 0 20px 0 20px;
 }
+header .header .menu_inline ul li a {
+  color: #111;
+}
 header .header .menu_inline ul li a:hover {
-  color: red;
+  color: orangered;
 }
 @media (max-width: 575px) {
   header .header .menu_inline ul {

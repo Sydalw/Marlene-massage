@@ -56,8 +56,11 @@ header {
                 li {
                     margin: 0 20px 0 20px;
                     
-                    a:hover {
-                        color:red;
+                    a{
+                        color:#111;
+                        &:hover {
+                            color:orangered;
+                        }
                     }
                 }
                 @media (max-width: 575px) {
