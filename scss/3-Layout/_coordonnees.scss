@@ -119,18 +119,9 @@
         }
     }
 
-    icon {
+    .icon {
         display:flex;
         justify-content: center;
-    }
-
-    i {
-        display:block;
-        font-size: 50px;
         text-align: center;
-        color:#fff;
-        &:hover{
-            color:#4267B2;
-        }
     }
 }
