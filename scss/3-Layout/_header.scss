@@ -61,6 +61,11 @@ header {
                         color:#111;
                         &:hover {
                             color:orangered;
+                            border-bottom: 1px solid orangered;
+                            transform: scaleX(1);
+                            transform-origin: left bottom;
+                            transition: all .25s ease-out;
+                            visibility: visible;
                         }
                     }
                 }
